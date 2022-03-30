@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<body>
+  
+  <div class="page1">
+    <nav>
+      <img src="images/menu.png" class="Menu-img">
+      <img src="images/canada"  class="logo-img">
+      <ul>
+          <li><a href="">About us</a></li>
+          <li><a href="">type of lights</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">prices</a></li>
+
+      </ul>
+      <button type="button" onclick="tglbtn()" id="btn"><span></span></button>
+    </nav>
+    <div class="lamp-cont">
+        <img src="images/lamp.png" class="lamp">
+        <img src="images/light.png" class="light" id="light">
+    </div>
+  <div class="text-container">
+      <h1>
+          Latest <br>in light 
+      </h1>
+      <p>Light or visible light is electromagnetic radiation within the portion of the electromagnetic spectrum that is perceived by the human eye.
+    <br>Whether you're looking for a floor lamp, lava lamp or a simple desk lamp, The Depot Canada has you covered with great choices from top brands.
+      </p>
+      <br>
+      <a href="https://www.homedepot.ca/en/home/categories/lighting-and-ceiling-fans/lamps-and-shades.html">Click here to see all collection</a>
+  </div>
+  <div class="control">
+      <p>04</p>
+      <div class="line"><span></span></div>
+      <p>05</p>
+
+  </div>
+<script>
+    var btn=document.getElementById("btn");
+    var light=document.getElementById("light");
+
+    function tglbtn()
+    {
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html>
